@@ -11,7 +11,6 @@ define(function() {
       var myObject = {
         name : 'Jory'
       };
-
       return myObject;
     },
 
@@ -21,7 +20,6 @@ define(function() {
       } else {
         var getValue = function() { return 'b'; }
       }
-
       return getValue();
     },
 
