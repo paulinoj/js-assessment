@@ -8,7 +8,7 @@ define(function() {
 
     alterObjects : function(constructor, greeting) {
       var tmp = arguments.callee.toString().match(/\(.*?\)/)[0];
-      var argumentNames = tmp.replace(/[()\s]/g,'').split(',');
+      var argumentNames = tmp.replace(/[()\s]/g,'').split(',');      
       constructor["prototype"][argumentNames[1]] = greeting;
     },
 
